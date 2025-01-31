@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booq Lottie Animations</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.0/lottie.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .animation-container {
+            width: 300px;
+            height: 300px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div id="animation1" class="animation-container"></div>
+    <div id="animation2" class="animation-container"></div>
+    <div id="animation3" class="animation-container"></div>
+    <div id="animation4" class="animation-container"></div>
+
+    <script>
+        // Load each Lottie animation using its respective JSON file
+        lottie.loadAnimation({
+            container: document.getElementById('animation1'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'Color%20System.json'  // Spaces replaced by %20 for URLs
+        });
+
+        lottie.loadAnimation({
+            container: document.getElementById('animation2'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'Colors.json'
+        });
+
+        lottie.loadAnimation({
+            container: document.getElementById('animation3'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'Insatgram%20Stories.json'
+        });
+
+        lottie.loadAnimation({
+            container: document.getElementById('animation4'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'Typeface%20and%20Logo.json'
+        });
+    </script>
+</body>
+</html>
